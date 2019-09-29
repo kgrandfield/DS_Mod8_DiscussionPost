@@ -1,0 +1,26 @@
+
+public class QueueEx {
+	
+	public static void main(String[] args) {
+		LinkedQueue<String> demoQueue = new LinkedQueue();
+		
+		demoQueue.enqueue("This ");
+		demoQueue.enqueue("is ");
+		demoQueue.enqueue("my ");
+		demoQueue.enqueue("queue ");
+		demoQueue.enqueue("implementation.");
+		
+		try {
+			System.out.print(demoQueue.dequeue());
+			System.out.print(demoQueue.dequeue());
+			System.out.print(demoQueue.dequeue());
+			System.out.print(demoQueue.dequeue());
+			System.out.print(demoQueue.dequeue());
+		}
+		
+		catch (EmptyQueueException excpt) {
+			System.out.println("Queue is empty; no entry to return.");
+		} // end catch block
+	}
+
+}
