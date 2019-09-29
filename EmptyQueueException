@@ -1,0 +1,3 @@
+public class EmptyQueueException extends Exception {
+	// stub, would add content for a real program
+} // end EmptyQueueException
